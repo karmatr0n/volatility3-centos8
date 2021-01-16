@@ -42,7 +42,6 @@ RUN yum -y install epel-release \
   && mv dwarf2json /usr/bin 
 
 RUN yum install -y capstone capstone-devel python3-capstone \
-      #&& adduser --system vol \
   && pip3 install pycryptodome \
   && pip3 install pefile \
   && cd /tmp/ \
@@ -50,12 +49,8 @@ RUN yum install -y capstone capstone-devel python3-capstone \
 
 RUN cd /tmp/volatility3/volatility/symbols \
   && curl -fL https://downloads.volatilityfoundation.org/volatility3/symbols/linux.zip -o linux.zip \
-  #&& unzip linux.zip \
   && curl -fL https://downloads.volatilityfoundation.org/volatility3/symbols/mac.zip -o mac.zip \
-  #&& unzip mac.zip \
   && curl -fL https://downloads.volatilityfoundation.org/volatility3/symbols/windows.zip -o windows.zip
-  #&& unzip windows.zip
-
 
 VOLUME /data
 WORKDIR /tmp/volatility3
