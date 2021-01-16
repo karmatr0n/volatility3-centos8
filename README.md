@@ -5,7 +5,7 @@ docker build --tag volatility3-centos8:0.0.1 .
 
 # Requeriments
 
-Put the collected memory, new linux profile and additional things (like yara rules) in a local directory to be shared in the container.
+Put the collected memory, new linux profile and additional things (like yara rules) in a local directory to be shared within the container.
 Example:
 ```
 mkdir -p $HOME/volatility/symbols/linux
