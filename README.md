@@ -30,6 +30,6 @@ zip volatility/symbols/linux.zip /data/symbols/linux/linux-volatility-profile.js
 ```
 python3 vol.py -f /data/output.lime linux.pslist
 python3 vol.py -f /data/output.lime linux.lsof
-python3 vol.py -f /data/output.lime  yarascan.YaraScan --yara-file /data/yara-rules/yara-rule.yar
+python3 vol.py -f /data/output.lime yarascan.YaraScan --yara-file /data/yara-rules/yara-rule.yar
 ```
 
