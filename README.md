@@ -18,7 +18,7 @@ mv yara-rule.yar $HOME/volatility/yara-rules
 
 # Use the local directory as a volume in the docker instance
 ```
-docker run -v $HOME/volatility:/data -ti volatility8-centos8:0.0.1
+docker run -v $HOME/volatility:/data -ti volatility3-centos8:0.0.1
 ```
 
 # Add the new linux profile to the kernel symbols files
