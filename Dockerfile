@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM centos:centos8
 
 ENV YARA_VERSION 4.0.2
 ENV YARA_PY_VERSION 4.0.2
